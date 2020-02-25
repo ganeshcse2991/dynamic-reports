@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async(req, res, next) => {
     try {
-        let res = await db.all();
+        let result = await db.all();
 
     } catch (err) {
         console.log(err);
@@ -16,7 +16,7 @@ router.get('/', async(req, res, next) => {
 
 router.get('/:id', async(req, res, next) => {
     try {
-        let res = await db.one(req.params.id);
+        let result = await db.one(req.params.id);
 
     } catch (err) {
         console.log(err);
