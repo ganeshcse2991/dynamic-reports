@@ -36,7 +36,4 @@ dataruns.one = (id) => {
 
 
 /*Applying the CRUD opertion Each ones*/
-
-
-
 module.exports = dataruns;
